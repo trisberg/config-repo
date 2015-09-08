@@ -1,0 +1,10 @@
+---
+spring:
+  profiles: default
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: spring
+    password: spring
+    driverClassName: com.mysql.jdbc.Driver
+  hadoop:
+    fsUri: hdfs://localhost:8020
