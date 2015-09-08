@@ -2,9 +2,11 @@
 spring:
   profiles: default
   datasource:
-    url: jdbc:mysql://localhost:3306/test
-    username: spring
-    password: spring
-    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:hsqldb:hsql://borneo:9001/test
+    username: sa
+    password:
+    driverClassName: org.hsqldb.jdbc.JDBCDriver
+  redis:
+    host: borneo
   hadoop:
-    fsUri: hdfs://localhost:8020
+    fsUri: hdfs://borneo:8020
