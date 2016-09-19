@@ -1,4 +1,11 @@
 ---
+scdf:
+  spring:
+    cloud:
+      deployer:
+        mesos:
+          dcos:
+            authorization-token: TEST
 spring:
   profiles: default
   datasource:
